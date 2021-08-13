@@ -5,6 +5,9 @@ import ClassComp from "../Hook/ClassComp";
 import { useState } from "react";
 import FuncComp from "../Hook/FuncComp";
 import ReducerDemo from "../Hook/ReducerDemo";
+import ContextDemo from "../Hook/ContextDemo";
+import Counter from "../Hook/Counter";
+
 function Hook() {
   const [visible, setVisible] = useState(true);
   return (
@@ -15,7 +18,9 @@ function Hook() {
       <button onClick={() => setVisible(!visible)}>
         函數组件显示隐藏：{visible}
         {/*         {visible && <FuncComp />} */}
-        <ReducerDemo />
+        {/*         <ReducerDemo />
+        <ContextDemo /> */}
+        <Counter counter1="0" />
       </button>
     </div>
   );
